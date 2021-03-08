@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  SlideshowApp
+//  SlideshowApp3
 //
-//  Created by 上田晃 on 2021/03/08.
+//  Created by 上田晃 on 2021/03/06.
 //
 
 import UIKit
