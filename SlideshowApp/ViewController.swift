@@ -49,7 +49,10 @@ class ViewController: UIViewController {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
         resultViewController.image = imageArray[nowIndex]
+        timer?.invalidate()
         
+        // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
+        timer = nil
     }
     
     
@@ -128,7 +131,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ segue:UIStoryboardSegue) {
-        
+        startButton.setTitle("再生", for: .normal)
+        gobutton.isEnabled = true
+        backbutton.isEnabled = true
     }
 }
 
