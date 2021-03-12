@@ -30,10 +30,10 @@ class ViewController: UIViewController {
     
     // スライドショーさせる画像の配列を宣言
     let imageArray = [
-        UIImage(named: "bakemono1")!,
-        UIImage(named: "bakemono2")!,
-        UIImage(named: "bakemono3")!,
-        UIImage(named: "bakemono4")!
+        UIImage(named: "bakemono1.jpg")!,
+        UIImage(named: "bakemono2.jpeg")!,
+        UIImage(named: "bakemono3.jpeg")!,
+        UIImage(named: "bakemono4.jpg")!
     ]
     
     
@@ -131,7 +131,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ segue:UIStoryboardSegue) {
-        startButton.setTitle("再生", for: .normal)
+        startButton.setTitle("再生/停止", for: .normal)
         gobutton.isEnabled = true
         backbutton.isEnabled = true
     }
